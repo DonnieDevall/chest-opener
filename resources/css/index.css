@@ -6,8 +6,8 @@
 }
 
 body {
- background: rgb(0, 163, 163);
- color: rgb(0, 0, 0);
+ background: rgb(54, 54, 54);
+ color: rgb(236, 236, 236);
  -webkit-font-smoothing: antialiased;
  display: flex;
  justify-content: center;
@@ -23,6 +23,20 @@ button {
  cursor: pointer;
 }
 
+@media (max-width: 425px) {
+  .chest {
+    width: 200px !important;
+  }
+
+  #reward {
+    margin: 0px 10px;
+  }
+
+  .reward-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .reward-container {
   display: flex;
   flex-direction: column;
@@ -30,19 +44,23 @@ button {
   align-items: center;
 }
 
-.chest-picture {
+.chest {
   width: 300px;
 }
 
 .reward-container h1 {
-  max-width: 400px;
+  /* max-width: 400px; */
   text-align: center;
+}
+
+.reward-container p {
+  font-weight: bold;
 }
 
 #reward {
   text-align: center;
-  background-color: rgb(165, 116, 42);
+  background-color: rgb(97, 97, 97);
   padding: 10px;
-  border: 3px solid rgb(97, 53, 27);
+  border: 3px solid rgb(85, 85, 85);
   border-radius: 5px;
 }
